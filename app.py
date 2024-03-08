@@ -6,6 +6,8 @@ import seaborn as sns
 
 df = pd.read_csv("startup_cleaned.csv")
 st.set_page_config(layout='wide', page_title='Startup Analysis')
+st.title('Shamika Kadam')
+st.title('FS23AI007')
 df['date']=pd.to_datetime(df['date'],errors='coerce')
 df['month']=df['date'].dt.month
 df['year']=df['date'].dt.year
